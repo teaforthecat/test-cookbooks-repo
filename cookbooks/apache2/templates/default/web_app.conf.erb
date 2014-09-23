@@ -4,6 +4,9 @@
   ServerAlias <% @params[:server_aliases].each do |a| %><%= "#{a}" %> <% end %>
   <% end -%>
   DocumentRoot <%= @params[:docroot] %>
+
+#this is a test to see if a change happens
+
   RewriteEngine On
 
   <Directory <%= @params[:docroot] %>>
